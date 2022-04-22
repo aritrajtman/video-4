@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class validarcontrasenia : MonoBehaviour
 {
     string contraseñacorrecta;
-    string contraseñausuario;
+    string contraseñaUsuario;
      public Text ingresousuario;
     public Text textoMsj;
     public GameObject cartelitoMsj;
@@ -24,8 +24,8 @@ public class validarcontrasenia : MonoBehaviour
     }
     public void validarcontrasenias()
     {
-        contraseñausuario = ingresousuario.text;
-        if(contraseñausuario == contraseñacorrecta)
+        contraseñaUsuario = ingresousuario.text;
+        if(contraseñaUsuario == contraseñacorrecta)
         {
             cartelitoMsj.SetActive(true);
             textoMsj.text = "bienvenido";
